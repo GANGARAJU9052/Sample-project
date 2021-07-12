@@ -1,3 +1,5 @@
+From tomcat:8-jre8
 # Maintainer 
 MAINTAINER "gdiwakar121@gmail.com" 
-RUN aws cp ./webapp.war https://s3.console.aws.amazon.com/s3/buckets/s3bucket1122
+
+COPY ./webapp.war /usr/local/tomcat/webapps
